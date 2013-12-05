@@ -4,6 +4,8 @@ package orig2011.v1;
  * Factory class for available games.
  */
 public class ReversiFactory implements IGameFactory {
+	
+	//Andrar bara lite 
 
 	/**
 	 * Returns an array with names of games this factory can create. Used by GUI
