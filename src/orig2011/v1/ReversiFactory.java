@@ -1,4 +1,5 @@
 package orig2011.v1;
+import orig2011.v0.*;
 
 /**
  * Factory class for available games.
@@ -11,7 +12,7 @@ public class ReversiFactory implements IGameFactory {
 	 */
 	@Override
 	public String[] getGameNames() {
-		return new String[] { "Gold"};
+		return new String[] { "Gold", "Reversi"};
 	}
 
 	/**
@@ -29,7 +30,6 @@ public class ReversiFactory implements IGameFactory {
 		} else if(gameName.equals("Reversi")) {
 			return new ReversiModel();
 		}
-
 		throw new IllegalArgumentException("No such game: " + gameName);
 	}
 }
